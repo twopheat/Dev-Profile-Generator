@@ -13,6 +13,7 @@
     "body-parser": "^1.19.0",
     "encoding": "binary",
     "express": "^4.17.1",
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.5.2",
+    "pdfkit": "^0.11.0"
   }
 }
