@@ -9,10 +9,10 @@ async function createPDF(data){
 	var template = handlebars.compile(templateHtml);
 	var html = template(data);
 
-	var milis = new Date();
-	milis = milis.getTime();
+	var timestamp = new Date();
+	timestamp = timestamp.getTime();
 
-	var pdfPath = path.join('pdf', `${data.name}-${milis}.pdf`);
+	var pdfPath = path.join('pdf', `${data.name}-${timestamp}.pdf`);
 
 	var options = {
 		width: '1230px',
@@ -20,7 +20,7 @@ async function createPDF(data){
 		footerTemplate: "<p></p>",
 		displayHeaderFooter: false,
 		margin: {
-			top: "10px",
+			top: "20px",
 			bottom: "30px"
 		},
 		printBackground: true,
@@ -47,9 +47,12 @@ const data = {
 	date: "1/10/2020",
 	name: "Brad Johnston",
 	age: 40,
-	Repositories: "https://github.com/twopheat?tab=repositories",
-	course: "Full Stack Developer",
-	obs: "Currently attending the UC Riverside Extension - Full Stack Coding Boot Camp."
+	repositories: 13,
+	stars: 4,
+	following: 10,
+	followers: 8,
+	skills: "HTML CSS Mongo Express React Node Javascript",
+	story: "Currently attending the UC Riverside Extension - Full Stack Coding Boot Camp."
 }
 
 createPDF(data);

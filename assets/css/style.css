@@ -243,6 +243,9 @@ iframe {
 .radius-1 {
     border-radius:7px 7px 0 0;
 }
+.radius-2 {
+    border-radius:7px;
+}
 .contactform {
     text-align:center;
     font-weight:600px;

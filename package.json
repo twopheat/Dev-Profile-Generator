@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodolfo-marcos07/pdf-generator-sample.git"
+    "url": "git+https://github.com/twopheat/Dev-Profile-Generator.git"
   },
   "author": "Rodolfo Marcos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rodolfo-marcos07/pdf-generator-sample/issues"
+    "url": "https://github.com/twopheat/Dev-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/rodolfo-marcos07/pdf-generator-sample#readme",
+  "homepage": "https://github.com/twopheat/Dev-Profile-Generator#readme",
   "dependencies": {
-    "handlebars": "^4.0.12",
-    "puppeteer": "^1.11.0",
-    "axios": "^0.19.0"
+    "axios": "^0.19.0",
+    "handlebars": "^4.7.0",
+    "inquirer": "^7.0.3",
+    "puppeteer": "^1.20.0"
   }
 }
