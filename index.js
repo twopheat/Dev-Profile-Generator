@@ -1,4 +1,3 @@
-const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
 const pdfGen = require('./pdf-generator.js')
@@ -15,20 +14,17 @@ const pdfGen = require('./pdf-generator.js')
   skills: "HTML CSS Javascript Mongo Expres.datas React Node",
   story: "Currently attending the UC Riverside Extension - Full Stack Coding Boot Camp."
 }*/
-var colors = { blue: "blue lighten-2", white: "white", black: "black" }
 inquirer
   .prompt([{
     message: "Enter Your GitHub Username:",
     name: "username"
   },
   {
-    message: "Enter Your favorite Color:",
-    name: "color",
-    type: "list",
-    choices: ["blue", "white", "black"]
+    message: "Pick a Materialize Color:",
+    name: "color"
   }])
   .then(function ({ username, color }) {
-    let data = { color: colors[color] }
+    let data = { color: color }
     const queryUrl = `https://api.github.com/users/${username}`;
 
     axios.get(queryUrl).then(function (res) {
@@ -40,18 +36,13 @@ inquirer
       data["location"] = res.data.location;
       data["name"] = res.data.name;
       data["bio"] = res.data.bio;
-      data["skills"] = res.data.skills;
 
 
       stars(data);
       console.log(data);
     });
 
-   /* const data2 = {
-      name: "Brad Johnston",
-      skills: "HTML CSS Javascript Mongo Express React Node",
-      bio: "Currently attending the UC Riverside Extension - Full Stack Coding Boot Camp."
-    }*/
+
 
   });
 

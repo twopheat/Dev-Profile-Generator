@@ -47,7 +47,7 @@ const handlebars = require("handlebars");
 
 
 
-	const data = {
+/*	const data = {
 		title: "Coding Boot Camp",
 		date: "1/10/2020",
 		name: "Brad Johnston",
@@ -59,7 +59,7 @@ const handlebars = require("handlebars");
 		followers: 8,
 		skills: "HTML CSS Javascript Mongo Express React Node",
 		bio: "Currently attending the UC Riverside Extension - Full Stack Coding Boot Camp."
-	}
+	}*/
 
 
 module.exports = createPDF;
