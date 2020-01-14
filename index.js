@@ -20,7 +20,7 @@ inquirer
     name: "username"
   },
   {
-    message: "Pick a Materialize Color:",
+    message: "This utilizes Materialize css, pick any color:",
     name: "color"
   }])
   .then(function ({ username, color }) {
@@ -35,8 +35,12 @@ inquirer
       data["followers"] = res.data.followers;
       data["location"] = res.data.location;
       data["name"] = res.data.name;
+      data["login"] = res.data.login;
       data["bio"] = res.data.bio;
-
+      data["id"] = res.data.id;
+      data["public_email"] = res.data.public_email;
+      data["blog"] = res.data.blog;
+      data["hireable"] = res.data.hireable;
 
       stars(data);
       console.log(data);

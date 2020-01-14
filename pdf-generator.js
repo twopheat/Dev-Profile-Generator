@@ -15,7 +15,7 @@ const handlebars = require("handlebars");
 		var timestamp = new Date();
 		timestamp = timestamp.getTime();
 
-		var pdfPath = path.join('pdf', `${data.name}-${timestamp}.pdf`);
+		var pdfPath = path.join('pdf', `${data.name}-Profile.pdf`);
 
 		var options = {
 			width: '1230px',
