@@ -1,2 +1,5 @@
 # Dev-Profile-Generator
-Week 9 HW
+This is a Developer Profile Generator that outputs as a PDF using html, puppeteerl and handlebars. It will ask for your github name, then a color. These will be used in generating the PDF. Run node index.js to get started! Cheers!
+
+TwoPheat
+Brad|J
