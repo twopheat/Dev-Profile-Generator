@@ -38,7 +38,7 @@ inquirer
       data["login"] = res.data.login;
       data["bio"] = res.data.bio;
       data["id"] = res.data.id;
-      data["public_email"] = res.data.public_email;
+      data["email"] = res.data.email;
       data["blog"] = res.data.blog;
       data["hireable"] = res.data.hireable;
 
